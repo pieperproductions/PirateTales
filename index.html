@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Tales</title>
+    <style>
+        body {
+            background-color: #3d2c1e;
+            color: #d4af37;
+            font-family: 'Old English Text MT', cursive;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5em;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 5em;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+
+        .tablink {
+            background-color: #1d1d1d;
+            color: #d4af37;
+            border: none;
+            border-radius: 10px 10px 0 0;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 1em;
+	    font-family: 'Old English Text MT', cursive;
+            transition: background-color 0.3s;
+        }
+
+        .tablink:hover {
+            background-color: #2d2d2d;
+        }
+
+        .tabcontent {
+            display: none;
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome aboard Pirate Tales!</h1>
+
+    <button class="tablink" onclick="openTab('tab1')">The Bloodied Seas</button>
+    <button class="tablink" onclick="openTab('tab2')">Cursed Waters</button>
+    <button class="tablink" onclick="openTab('tab3')">The Devil's Treasure</button>
+    <button class="tablink" onclick="openTab('tab4')">Mutiny at Midnight</button>
+    <button class="tablink" onclick="openTab('tab5')">The Blackened Horizon</button>
+ <button class="tablink" onclick="openTab('tabz')"></button>
+
+    <div id="tab1" class="tabcontent active">
+    <h2>The Bloodied Seas</h2>
+    <p>On a moonless night, amidst the thundering waves and howling winds, Captain Grimjaw and his crew sailed through the bloodied seas, haunted by the souls of their fallen foes. Each wave crashing against the ship echoed the cries of the vanquished, a grim reminder of the ruthless path they'd carved across the ocean. With every plundered vessel, their reputation grew darker, their names whispered in fear by all who dared sail the treacherous waters. The crew's faces bore the scars of countless battles, their eyes reflecting the turmoil of their souls. The deck was slick with blood, the stench of gunpowder hanging heavy in the air. But amidst the chaos, Captain Grimjaw remained unyielding, his weathered face a testament to the trials he'd endured. With eyes fixed on the horizon, where untold riches awaited those brave enough to claim them, he steered the ship onward, driven by a hunger for wealth that matched the ferocity of the storm raging around them.</p>
+</div>
+
+<div id="tab2" class="tabcontent">
+    <h2>Cursed Waters</h2>
+    <p>Legend spoke of cursed waters where ships vanished without a trace, swallowed by the ocean's insatiable hunger. Captain Blackheart, driven by greed and folly, dared to sail these treacherous seas in search of forgotten relics and forbidden treasures. But with each passing day, his crew succumbed to madness, tormented by visions of the drowned and the damned. The once proud deckhands now wandered the ship like lost souls, their haunted eyes betraying the horrors they'd witnessed. The ship itself seemed to groan in agony, its timbers creaking under the weight of ancient curses. As the cursed waters whispered their secrets, Captain Blackheart's lust for power blinded him to the dangers lurking beneath the surface. Ancient evils stirred in the depths, their malevolent presence growing stronger with each passing mile. Yet, with madness gripping his crew and the abyss beckoning from below, Captain Blackheart pressed on, driven by a hunger for riches that bordered on madness.</p>
+</div>
+
+<div id="tab3" class="tabcontent">
+    <h2>The Devil's Treasure</h2>
+    <p>Deep within the heart of a forsaken island lay the Devil's Treasure, guarded by curses and dark magic. Captain Bloodbeard, fueled by ambition and folly, led his crew through treacherous jungles and perilous cliffs in pursuit of untold riches. The air hung heavy with the stench of death, the island's lush foliage concealing dangers lurking in every shadow. The ground itself seemed to pulse with malevolence, as if warning the intruders to turn back. As they delved deeper into the island's depths, they awakened ancient guardians, cursed souls doomed to protect the Devil's bounty for all eternity. Their hollow eyes followed the intruders' every move, their spectral forms drifting through the mist like phantoms of the night. With every step, Captain Bloodbeard's resolve was tested, his greed blinding him to the horrors that awaited those who dared disturb the slumber of the damned. But the promise of riches beyond imagination fueled his determination, driving him deeper into the heart of darkness.</p>
+</div>
+
+<div id="tab4" class="tabcontent">
+    <h2>Mutiny at Midnight</h2>
+    <p>Beneath the cloak of darkness, whispers of mutiny echoed through the ship, a festering poison that threatened to tear Captain Ironhand's crew asunder. Betrayed by his closest allies, Captain Ironhand stood alone against the mutinous tide, his iron will the only thing holding the ship together. The air crackled with tension, the crew's once unwavering loyalty now fractured by greed and ambition. But as the moon reached its zenith, blades were drawn and alliances shattered, plunging the ship into chaos. With every swing of the sword, Captain Ironhand fought to reclaim his throne, his fury unmatched by any who dared challenge his authority. The deck ran red with blood, the cries of the fallen lost in the roar of the raging storm. Yet through the darkness, a glimmer of hope remained, a beacon of light amidst the tempest that threatened to consume them all.</p>
+</div>
+
+<div id="tab5" class="tabcontent">
+    <h2>The Blackened Horizon</h2>
+    <p>Upon the blackened horizon, where the sky met the sea in a fiery embrace, Captain Darkblade and his crew set sail in search of eternal glory. With sails unfurled and cannons blazing, they carved a path of destruction across the ocean, leaving naught but chaos in their wake. The sea boiled with fury, waves crashing against the ship like the wrath of vengeful gods. But as the sun dipped below the waves, shadows stirred beneath the surface, ancient horrors awakened by the bloodshed of the living. Dark tendrils coiled around the ship, dragging it down into the abyss below. With every victory, Captain Darkblade's grip on reality slipped further, his lust for power consuming him until there was nothing left but a hollow shell of a man, lost to the depths of the abyss. And as the blackened horizon faded into darkness, the echoes of his laughter mingled with the screams of the damned, a haunting reminder of the price paid for chasing immortality.</p>
+</div>
+
+</div>
+
+
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
